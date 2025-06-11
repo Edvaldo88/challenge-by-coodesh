@@ -35,6 +35,7 @@ LEFT JOIN orders o ON c.customer_id = o.customer_id
 WHERE o.order_id IS NULL;
 
 --- Produtos não comprados
+
 SELECT p.product_id, p.product_name
 FROM products p
 LEFT JOIN order_items oi ON p.product_id = oi.product_id
